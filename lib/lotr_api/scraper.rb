@@ -1,0 +1,3 @@
+def LOTR::Scraper
+    
+end
