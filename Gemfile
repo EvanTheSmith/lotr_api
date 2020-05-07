@@ -6,3 +6,4 @@ gemspec
 gem "rake", "~> 12.0"
 gem 'pry'
 gem 'dotenv-rails'
+gem 'byebug'
