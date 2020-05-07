@@ -2,3 +2,4 @@
 
 require './lib/environment.rb'
 
+LOTR::CLI.new.call
