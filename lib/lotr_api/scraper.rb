@@ -1,3 +1,3 @@
-def LOTR::Scraper
-    
+def LotrScraper
+
 end

@@ -1,4 +1,4 @@
-require "lotr_api/version"
-require "lotr_api/cli.rb"
+require_relative "lotr_api/version"
+require_relative "lotr_api/cli"
+
 require "pry"
-require "dotenv-rails"
