@@ -5,6 +5,7 @@ attr_reader :movies
         LOTR::Scraper.new.scrape
         @movies = LOTR::Movies.all
         prompt
+        byebug
     end
 
     def prompt
