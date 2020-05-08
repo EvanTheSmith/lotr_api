@@ -4,4 +4,5 @@ require_relative '../lib/scraper'
 
 require 'byebug'
 require 'httparty'
-require 'dotenv-rails'
+require 'dotenv'
+Dotenv.load
