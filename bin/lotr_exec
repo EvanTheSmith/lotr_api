@@ -2,4 +2,5 @@
 
 require './config/environment'                                                                          
 
-LOTR::CLI.new.go
+#LOTR::CLI.new.go
+LOTR::Scraper.new.test
