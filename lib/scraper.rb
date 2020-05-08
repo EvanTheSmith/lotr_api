@@ -3,6 +3,16 @@ class LOTR::Scraper
     def scrape
         the_key = ENV["LOTR_KEY"]
         mov_url = "https://the-one-api.herokuapp.com/v1/movie"
-        HTTParty.get(mov_url, :headers => {"Authorization" => "Bearer #{the_key}"}) #movies
+        movies = HTTParty.get(mov_url, :headers => {"Authorization" => "Bearer #{the_key}"}) #movies
+        skip_to_movies = 5
+
+        movies["docs"].each do |tester|
+        if skip_to_movies > 0
+            skip_to_movies -= 1
+        else
+            # Create movie objects
+            
+        end
+
     end
 end

@@ -1,4 +1,4 @@
-Class LOTR::Movies
+class LOTR::Movies
 attr_reader :name, :id_number, :budget, :box_rev, :award_nom, :award_win
 @@all = []
 
@@ -9,7 +9,7 @@ attr_reader :name, :id_number, :budget, :box_rev, :award_nom, :award_win
     @box_rev = box
     @award_nom = nom
     @award_win = win
-    save
+    self.save
     end
 
     def self.all

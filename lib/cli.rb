@@ -2,7 +2,8 @@ class LOTR::CLI
 attr_reader :movies
 
     def begin
-        @movies = LOTR::Scraper.scrape
+        LOTR::Scraper.new.scrape
+        @movies = LOTR::Movies.all
         prompt
     end
 
