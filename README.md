@@ -1,4 +1,4 @@
-# LotrApi
+# Lord of the Rings API
 
 Short description of my application.
 
