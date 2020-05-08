@@ -11,8 +11,13 @@ class LOTR::Scraper
             skip_to_movies -= 1
         else
             # Create movie objects
-            newmovie = LOTR::Moves.new
-            
+            newmovie = LOTR::Movies.new
+            newmovie.name = 
+            newmovie.id_number = 
+            newmovie.budget = 
+            newmovie.box_rev = 
+            newmovie.award_nom = 
+            newmovie.award_win = 
         end
 
     end
