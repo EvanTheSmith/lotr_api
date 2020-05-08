@@ -4,6 +4,6 @@ class LOTR::CLI
     end
 
     def prompt
-        
+        # This is the prompt displayed when my CLI starts, informing the user of what they can do
     end
 end
