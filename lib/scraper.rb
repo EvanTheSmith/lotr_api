@@ -11,6 +11,7 @@ class LOTR::Scraper
             skip_to_movies -= 1
         else
             # Create movie objects
+            newmovie = LOTR::Moves.new
             
         end
 
