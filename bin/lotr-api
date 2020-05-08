@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require_relative '../config/environment'                                                                                  
+require './config/environment'                                                                          
 
-LOTRCLI.new.go
+LOTR::CLI.new.go

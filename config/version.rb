@@ -1,3 +1,3 @@
-module LotrApi
+module LOTR
   VERSION = "0.1.0"
 end

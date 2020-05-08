@@ -1,0 +1,3 @@
+class LOTR::Scraper
+
+end

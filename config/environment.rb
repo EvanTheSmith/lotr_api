@@ -1,5 +1,5 @@
-require_relative '../lib/LOTR/cli'
-require_relative '../lib/LOTR/scraper'
-require_relative '../lib/version'
+require_relative './version'
+require_relative '../lib/cli'
+require_relative '../lib/scraper'
 
 require 'byebug'
