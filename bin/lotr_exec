@@ -2,4 +2,4 @@
 
 require './config/environment'                                                                          
 
-LOTR::Scraper.new.scrape
+LOTR::CLI.new.begin

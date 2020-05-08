@@ -1,9 +1,16 @@
 class LOTR::CLI
-    def go
-        puts "Testing 123"
+attr_reader :movies
+
+    def begin
+        @movies = LOTR::Scraper.scrape
+        prompt
     end
 
     def prompt
-        # This is the prompt displayed when my CLI starts, informing the user of what they can do
+        puts " "
+        puts "Welcome to my Lord of the Rings movie app. Enter the number corresponding with each row to get more information about each movie."
+        puts " "
+        puts "Type 'exit' to end the program."
+        puts " "
     end
 end
