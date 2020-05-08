@@ -1,5 +1,4 @@
-class LOTR::Scraper
-# This class is responsible for scraping my LOTR API, using my personal key
+class LOTR::Scraper # This class is responsible for scraping my LOTR API, using my personal key
     def scrape
         the_key = ENV["LOTR_KEY"]
         mov_url = "https://the-one-api.herokuapp.com/v1/movie"
@@ -13,12 +12,11 @@ class LOTR::Scraper
             newmovie = LOTR::Movies.new
             newmovie.name = mov["name"].strip
             newmovie.id_number = mov["_id"]
-            newmovie.budget = mov["budgetInMillions"]
-            newmovie.box_rev = mov["boxOfficeRevenueInMillions"]
+            newmovie.budget = "$#{mov["budgetInMillions"]} million"
+            newmovie.box_rev = "$#{mov["boxOfficeRevenueInMillions"]} million"
             newmovie.award_nom = mov["academyAwardNominations"]
             newmovie.award_win = mov["academyAwardWins"]
         end
         end
-
     end
 end
