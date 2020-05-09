@@ -11,7 +11,6 @@ class LOTR::Scraper # This class is responsible for scraping my LOTR API, using 
         else
             newmovie = LOTR::Movies.new
             newmovie.name = mov["name"].strip
-            newmovie.id_number = mov["_id"]
             newmovie.budget = "$#{mov["budgetInMillions"]} million"
             newmovie.box_rev = "$#{mov["boxOfficeRevenueInMillions"]} million"
             newmovie.award_nom = mov["academyAwardNominations"]

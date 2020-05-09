@@ -1,5 +1,5 @@
 class LOTR::Movies
-attr_accessor :name, :id_number, :budget, :box_rev, :award_nom, :award_win
+attr_accessor :name, :budget, :box_rev, :award_nom, :award_win
 @@all = []
 
     def initialize

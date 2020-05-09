@@ -13,7 +13,12 @@ attr_reader :movies
             input = gets.strip
             if input == "1"
                 puts " "
-                puts "Show information for Fellowship"
+                movie = @movies[input.to_i-1]
+                puts "Title: The Lord of the Rings: #{movie.name}"
+                puts "Budget: #{movie.budget}"
+                puts "Box office revenue: #{movie.box_rev}"
+                puts "Award nominations: #{movie.award_nom}"
+                puts "Awards won: #{movie.award_win}"
                 sleep 1
                 prompt
             elsif input == "2"
