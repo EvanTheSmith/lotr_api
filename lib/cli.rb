@@ -12,25 +12,11 @@ attr_reader :movies
         while input != "exit"
             input = gets.strip
             if input == "1"
-                puts " "
-                movie = @movies[input.to_i-1]
-                puts "Title: The Lord of the Rings: #{movie.name}"
-                puts "Budget: #{movie.budget}"
-                puts "Box office revenue: #{movie.box_rev}"
-                puts "Award nominations: #{movie.award_nom}"
-                puts "Awards won: #{movie.award_win}"
-                sleep 1
-                prompt
+                print_movie(input) # Fellowship of the Ring
             elsif input == "2"
-                puts " "
-                puts "Show information for Two Towers"
-                sleep 1
-                prompt
+                print_movie(input) # Two Towers
             elsif input == "3"
-                puts " "
-                puts "Show information for Return of the King"
-                sleep 1
-                prompt
+                print_movie(input) # Return of the King
             elsif input.downcase == "list"
                 movie_list
                 prompt
@@ -58,7 +44,7 @@ attr_reader :movies
         puts "Enter the number corresponding with each row to get more information about each movie."
         puts " "
         @movies.each.with_index(1) do |movie, ind|
-            puts "#{ind}. #{movie.name}"
+            puts "#{ind}. The Lord of the Rings: #{movie.name}"
         end
     end
 
@@ -70,6 +56,18 @@ attr_reader :movies
             movie += 1
         end
         ordered_list
+    end
+
+    def print_movie(input)
+        puts " "
+        movie = @movies[input.to_i-1]
+        puts "Title: The Lord of the Rings: #{movie.name}"
+        puts "Budget: #{movie.budget}"
+        puts "Box office revenue: #{movie.box_rev}"
+        puts "Award nominations: #{movie.award_nom}"
+        puts "Awards won: #{movie.award_win}"
+        sleep 1
+        prompt
     end
 
 end
