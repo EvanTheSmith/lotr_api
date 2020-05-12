@@ -1,6 +1,6 @@
-# Lord of the Rings API
+# Lord of the Rings - Movie Fun Facts
 
-Short description of my application.
+This app lists all films in the Lord of the Rings trilogy of movies along with relevant details about their budgets, box office revenue and awards.
 
 ## Installation
 
@@ -20,12 +20,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+When the program launches, you will be presented with the list of movies. Follow the on-screen prompts to learn more about each movie, show the list again, or exit the program.
 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/EvanTheSmith/lotr_api. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/EvanTheSmith/lotr_api/blob/master/CODE_OF_CONDUCT.md).
-
 
 ## License
 
